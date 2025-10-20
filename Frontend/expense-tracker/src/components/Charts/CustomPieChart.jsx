@@ -58,7 +58,8 @@ const CustomPieChart = ({
                             textAnchor="middle"
                             fill="#333"
                             fontSize="24px"
-                            fontWidth="semi-bold"
+                            // fontWidth="semi-bold"
+                            fontWeight="500"
                         >
                             {totalAmount}
                         </text>
