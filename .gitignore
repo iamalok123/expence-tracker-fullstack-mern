@@ -1,0 +1,79 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Node modules (for both backend & frontend)
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+**/.env
+.env.local
+.env.production
+.env.development
+
+# Build and log files
+dist/
+build/
+coverage/
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Excel or data files
+*.xlsx
+*.csv
+
+# IDE / Editor settings
+.vscode/
+.idea/
+.qodo/
+
+# OS-specific files
+*.exe
+*.dll
+
+# Uploaded files (if you store them locally)
+Backend/uploads/
+
+# Lock files (optional, if you prefer reproducible installs, keep them)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+
+# Node dependencies
+node_modules/
+
+# Env files
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Uploads or user files
+uploads/
+
+
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Local settings
+.vscode/
+.idea/
+.DS_Store
