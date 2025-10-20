@@ -169,7 +169,7 @@ Full_Stack_expense_tracker/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd Full_Stack_expense_tracker
+   cd expence-tracker-fullstack-mern
    ```
 
 2. **Backend Setup**
@@ -333,4 +333,3 @@ This project is licensed under the ISC License.
 
 ---
 
-**Built with ❤️ using React, Node.js, and MongoDB**
