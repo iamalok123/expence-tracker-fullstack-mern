@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: expense-tracker
+    env: node
+    buildCommand: |
+      npm ci --prefix Backend
+      npm ci --prefix Frontend/expense-tracker
+      npm run build --prefix Frontend/expense-tracker
+    startCommand: node Backend/server.js
+    envVars:
+      - key: CLIENT_BUILD_PATH
+        value: /opt/render/project/src/Frontend/expense-tracker/dist
+    autoDeploy: true
+
