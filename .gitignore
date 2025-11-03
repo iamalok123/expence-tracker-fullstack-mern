@@ -53,7 +53,7 @@ node_modules/
 # Env files
 .env
 .env.*
-
+Frontend/expense-tracker/.env
 # Logs
 logs/
 *.log
