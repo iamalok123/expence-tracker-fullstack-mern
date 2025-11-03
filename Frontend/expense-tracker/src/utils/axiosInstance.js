@@ -35,7 +35,11 @@ axiosInstance.interceptors.response.use(
                 console.warn("Unauthorized! Redirecting to login...");
                 // 🔒 Clear token before redirecting (prevents infinite loops)
                 localStorage.removeItem("token");
-                window.location.href = "/login";
+                if (window.location.hash?.startsWith("#/") || window.location.hash === "#") {
+                    window.location.hash = "#/login";
+                } else {
+                    window.location.href = "/#/login";
+                }
             } else if (status === 500) {
                 console.error("Internal Server Error. Please try again later.");
             } else if (status === 403) {
